@@ -1,0 +1,264 @@
+.medieval {
+  --title-font: "MedievalSharp", serif;
+  --main-font: "Oldenburg", serif;
+  --title-font-color: #111111;
+  --main-font-color: #716657;
+  --dimmed-font-color: #aa6e1e;
+  --background-main: #e8d3b6;
+  --background-alt: #fffef0;
+}
+
+body {
+  background: var(--background-main);
+  width: 100%;
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+}
+#container {
+  box-shadow: #333;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* INVITE & RSVP */
+#lander {
+  text-align: center;
+  padding: 25px;
+  margin-top: 10px;
+  font-family: var(--title-font);
+  box-shadow: 2px 3px 20px #333, 0 0 60px #8a4d0f inset;
+  background: var(--background-alt);
+  border-radius: 2px;
+}
+#lander #line1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+#lander #line2 {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-family: var(--main-font)
+}
+#lander #line3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 600;
+}
+#lander #date {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#lander a {
+  min-height: 150px;
+  display: block;
+}
+#lander img {
+  position: relative;
+  width: 180px;
+  transition: all .5s;
+  animation: scroll 1s infinite;
+}
+#lander img:hover {
+  width: 185px;
+  animation: none;
+  margin-top: 12px;
+}
+#more {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* WEDDING DAY SCHEDULE */
+#schedule {
+  margin-top: 50px;
+  padding: 10px;
+}
+#invite {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 25px;
+}
+#carrousel {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#carrousel>div {
+  width: 40%;
+  margin: 2%;
+  padding: 3%;
+  background: var(--background-alt);
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 2px 3px 10px #333;
+}
+#carrousel>div .number {
+  font-size: .8em;
+  line-height: 1em;
+}
+#carrousel>div .icon {
+  font-size: 3em;
+  color: #1d1d1d;
+}
+#carrousel>div .title {
+  font-family: var(--title-font);
+  font-size: 1.5em;
+  line-height: 1em;
+  padding-top: 10px;
+}
+#carrousel>div .hour {
+  color: var(--dimmed-font-color);
+  font-style: italic;
+  font-size: .9em;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#carrousel>div .description {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: .8em;
+}
+
+/* Theme */
+#dresscode {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("../img/theme.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+#dresscode #themewrapper {
+  width: 60%;
+  padding-top: calc(25% + 30px);
+  max-width: 400px;
+  margin: 0 auto;
+}
+#dresscode #definition {
+  color: var(--dimmed-font-color);
+  font-size: .8em;
+  font-style: italic;
+  padding: 10px;
+}
+#dresscode .scroll {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#dresscode .m-scroll {
+  overflow: hidden;
+  height: 341px;
+  white-space: nowrap;
+  animation: scrollText 60s infinite linear;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+#dresscode .m-scroll:hover {
+  animation-play-state: paused;
+}
+#dresscode span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#dressexample {
+  height: 341px;
+}
+#buy h3 {
+  margin-top: 30px;
+}
+#buy #storewrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#buy .stores {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--background-alt);
+  padding: 15px;
+  margin-top: 10px;
+  text-align: left;
+  box-shadow: 2px 3px 10px #333;
+  border-radius: 5px;
+}
+#buy .stores p {
+  font-weight: 600;
+}
+#buy .stores ul {
+  list-style-type: none;
+  padding-left: 10px;
+  text-align: left;
+}
+#buy .stores a {
+  text-decoration: underline;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Desktop-specific CSS */
+@media (min-width: 768px) {
+  #container {
+    width: 70%;
+  }
+  #carrousel>div {
+    width: 27%;
+    margin: 1%;
+    padding: 2%;
+  }
+  #dresscode #themewrapper {
+    padding-top: calc(24% + 30px);
+  }
+  #dresscode .scroll {
+    width: 60%;
+  }
+  #buy .stores {
+    max-width: 40%;
+  }
+}
+
+/* Animations */
+@keyframes scroll {
+  0% {
+    margin-top: 12px;
+  }
+  30% {
+    margin-top: 10px;
+  }
+  70% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 12px;
+  }
+}
