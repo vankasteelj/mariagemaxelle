@@ -96,14 +96,12 @@ a {
   border-radius: 25px;
 }
 #carrousel {
-  display: flex;
   width: 100%;
-  flex-wrap: wrap;
 }
 #carrousel>div {
-  width: 40%;
-  margin: 2%;
-  padding: 3%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
   background: var(--background-alt);
   border-radius: 25px;
   text-align: center;
@@ -221,7 +219,6 @@ a {
 #location h1 {
   padding-top: 25px;
 }
-
 #location #map {
   width: 80%;
   margin: 0 auto;
