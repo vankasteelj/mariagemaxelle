@@ -96,12 +96,14 @@ a {
   border-radius: 25px;
 }
 #carrousel {
+  display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 #carrousel>div {
-  width: 60%;
-  margin: 0 auto;
-  padding: 10px;
+  width: 40%;
+  margin: 2%;
+  padding: 3%;
   background: var(--background-alt);
   border-radius: 25px;
   text-align: center;
