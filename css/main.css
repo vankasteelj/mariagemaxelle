@@ -217,6 +217,41 @@ a {
   text-decoration: underline;
 }
 
+/* location */
+#location h1 {
+  padding-top: 25px;
+}
+
+#location #map {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 800px 800px 0 0;
+  background-color: var(--background-alt);
+  box-shadow: 2px 3px 10px #333;
+}
+#location img {
+  padding-top: 10px;
+  width: 100%;
+  border-radius: 800px 800px 0 0;
+}
+#location #hostels {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#location .hostel {
+  width: 85%;
+  margin: 0 auto;
+  background-color: var(--background-alt);
+  padding: 15px;
+  margin-top: 10px;
+  text-align: left;
+  box-shadow: 2px 3px 10px #333;
+  border-radius: 5px;
+}
+
 @keyframes scrollText {
   from {
     transform: translateX(0%);
@@ -242,8 +277,9 @@ a {
   #dresscode .scroll {
     width: 60%;
   }
-  #buy .stores {
-    max-width: 40%;
+  #buy .stores,
+  #location .hostel {
+    max-width: 45%;
   }
 }
 
