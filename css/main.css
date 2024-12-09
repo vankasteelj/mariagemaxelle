@@ -157,6 +157,7 @@ a {
   color: var(--dimmed-font-color);
   font-size: .8em;
   font-style: italic;
+  filter: brightness(0.7);
   padding: 10px;
 }
 #dresscode .scroll {
