@@ -271,6 +271,7 @@ a {
     padding: 2%;
   }
   #dresscode #themewrapper {
+    width: 40%;
     padding-top: calc(24% + 30px);
   }
   #dresscode .scroll {
@@ -279,6 +280,16 @@ a {
   #buy .stores,
   #location .hostel {
     max-width: 45%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #container {
+    width: 50%;
+  }
+  #dresscode #themewrapper {
+    width: 30%;
+    padding-top: calc(25% + 30px);
   }
 }
 
