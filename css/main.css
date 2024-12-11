@@ -2,7 +2,7 @@
   --title-font: "MedievalSharp", serif;
   --main-font: "Oldenburg", serif;
   --title-font-color: #111111;
-  --main-font-color: #716657;
+  --main-font-color: #2a2826;
   --dimmed-font-color: #aa6e1e;
   --background-main: #e8d3b6;
   --background-alt: #fffef0;
@@ -12,6 +12,7 @@ body {
   background: var(--background-main);
   width: 100%;
   font-family: var(--main-font);
+  color: var(--main-font-color);
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
