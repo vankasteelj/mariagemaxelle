@@ -39,6 +39,11 @@ a {
   background: var(--background-alt);
   border-radius: 2px;
 }
+#lander #banner {
+  width: 80px;
+  margin-top: -20px!important;
+  filter: grayscale(0.4)
+}
 #lander #line1 {
   margin-top: 10px;
   margin-bottom: 0;
