@@ -237,6 +237,9 @@ a {
   background-color: var(--background-alt);
   box-shadow: 2px 3px 10px #333;
 }
+#location #map iframe {
+  width: 100%;
+}
 #location img {
   padding-top: 10px;
   width: 100%;
