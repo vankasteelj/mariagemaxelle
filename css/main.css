@@ -273,7 +273,7 @@ a {
 /* Desktop-specific CSS */
 @media (min-width: 768px) {
   #container {
-    width: 70%;
+    width: 60%;
   }
   #lander #banner {
     width: 80px;
@@ -298,7 +298,7 @@ a {
 
 @media (min-width: 1500px) {
   #container {
-    width: 50%;
+    width: 40%;
   }
   #lander #banner {
     width: 100px;
