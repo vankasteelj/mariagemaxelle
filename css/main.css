@@ -145,6 +145,24 @@ a {
   font-style: italic;
   font-size: .8em;
 }
+#schedule #ncb {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
+  background: var(--background-alt);
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 2px 3px 10px #333;
+}
+#schedule #ncb p {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+#schedule #ncb img {
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 20px;
+}
 
 /* Theme */
 #dresscode {
@@ -306,6 +324,9 @@ a {
   }
   #lander #banner {
     width: 100px;
+  }
+  #schedule #ncb {
+    width: 30%;
   }
   #dresscode #themewrapper {
     width: 30%;
