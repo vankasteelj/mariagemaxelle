@@ -69,6 +69,10 @@ a {
   text-transform: uppercase;
   font-size: 20px;
 }
+#lander #rsvpdate {
+  font-size: 12px;
+  font-family: var(--main-font);
+}
 #lander a {
   min-height: 150px;
   display: block;
