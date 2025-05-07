@@ -163,6 +163,10 @@ a {
   max-width: 200px;
   padding-bottom: 20px;
 }
+#parking {
+  font-size: 0.8em;
+  font-style: italic;
+}
 
 /* Theme */
 #dresscode {
